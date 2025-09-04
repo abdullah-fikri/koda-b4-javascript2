@@ -21,10 +21,17 @@ const result = (c) => {
     let suhu11 = suhu1(c)
     let suhu22 = suhu2(c)
     let suhu33 = suhu3(c)
-    console.log(`${suhu11}°F  ${suhu22}°R  ${suhu33}°K`)
-    
-
+    console.log(`dari c-f ${suhu11}°F\n  dari c-k ${suhu22}°R \n  dari c-k ${suhu33}°K`)
 }
 
+
+const out = (c, cb1, cb2, cb3) => {
+    console.log (`${c}° diubah jadi ${cb1(c)}°F`)
+    console.log (`${c}° diubah jadi ${cb2(c)}°R`)
+    console.log (`${c}° diubah jadi ${cb3(c)}°k`)
+   
+}
+
+
 result(20)
-// console.log(result(20))
+out(20, suhu1, suhu2, suhu3)
