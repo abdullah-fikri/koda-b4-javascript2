@@ -17,9 +17,14 @@ const suhu3 = (c) => {
        return kelvin
     }
 
-const result = () => {
-    console.log(`dari c ke f = ${suhu1(20)}  dari c ke r =  ${suhu2(20)} dari c ke k = ${suhu3(20)} `)
+const result = (c) => {
+    let suhu11 = suhu1(c)
+    let suhu22 = suhu2(c)
+    let suhu33 = suhu3(c)
+    console.log(`${suhu11}°F  ${suhu22}°R  ${suhu33}°K`)
+    
+
 }
 
-
-result()
+result(20)
+// console.log(result(20))
