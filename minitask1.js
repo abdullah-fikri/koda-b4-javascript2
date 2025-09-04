@@ -4,7 +4,7 @@ const bio = {
 }
 
 const extraInfo = {
-    skills: ['web programming', 'painting'],
+    skills: ['web programming', 'painting,'],
     education: [
         {
             name : 'smp denpasar',
@@ -14,7 +14,7 @@ const extraInfo = {
 }
 
 const extraSkils = {
-    skills1: ['musik','singing']
+    skillTambahan: ['Musik','singing']
 }
 
 const profile = {
@@ -23,4 +23,4 @@ const profile = {
     ...extraSkils
 }
 
-console.log(profile.skills+',singing', ',dancing',',learning')
+console.log(profile.skills + extraSkils.skillTambahan)
